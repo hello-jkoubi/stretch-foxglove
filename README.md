@@ -4,6 +4,14 @@ Use Foxglove with Hello Robot Stretch (ROS 2) for visualization and debugging.
 
 ---
 
+# Table of Contents
+ - [Requirements](#requirements)
+ - [Install](#install)
+ - [Test it](#test-it)
+
+
+---
+
 ## Requirements
 
 ### Host (Laptop)
@@ -56,7 +64,7 @@ sudo apt install ros-humble-foxglove-bridge
 
 ## Test it
 
-#### 1. Launch stretch driver (Robot)
+#### 1. Launch Stretch Driver (Robot)
 
 ```bash
 ros2 launch stretch_core stretch_driver.launch.py
