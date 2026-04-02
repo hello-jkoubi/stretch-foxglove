@@ -1,0 +1,213 @@
+{
+  "configById": {
+    "3D!4jowa39": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 13.966745921857905,
+        "phi": 56.305519149090465,
+        "thetaOffset": 53.27419013298315,
+        "targetOffset": [
+          0.2210184272045458,
+          -0.9971165034007634,
+          3.3397264321438203e-17
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {
+        "transforms": {
+          "visible": true,
+          "labelSize": 0.02,
+          "axisSize": 0.1,
+          "showLabel": false,
+          "lineWidth": 2
+        },
+        "ignoreColladaUpAxis": false,
+        "meshUpAxis": "z_up"
+      },
+      "transforms": {},
+      "topics": {
+        "/scan": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "flat",
+          "colorMap": "turbo",
+          "pointSize": 7,
+          "flatColor": "#c924d4ff"
+        },
+        "/map": {
+          "visible": true
+        },
+        "/robot_description": {
+          "visible": true
+        },
+        "/scan_filtered": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "flat",
+          "colorMap": "turbo",
+          "pointSize": 5
+        }
+      },
+      "layers": {
+        "grid": {
+          "visible": true,
+          "drawBehind": false,
+          "label": "Grid",
+          "instanceId": "be567645-7bca-4f49-a081-269f1c76c62e",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {},
+      "fixedFrame": "map",
+      "foxglovePanelTitle": "Main",
+      "synchronize": false
+    },
+    "Indicator!dqhpgj": {
+      "path": "/is_runstopped.data",
+      "style": "bulb",
+      "fontSize": 36,
+      "fallbackColor": "#cf2525",
+      "fallbackLabel": "False",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#68e24a",
+          "label": "True"
+        }
+      ],
+      "foxglovePanelTitle": "Runstop"
+    },
+    "Indicator!j74lxr": {
+      "path": "/is_homed.data",
+      "style": "bulb",
+      "fontSize": 36,
+      "fallbackColor": "#a0a0a0",
+      "fallbackLabel": "False",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#68e24a",
+          "label": "True"
+        }
+      ],
+      "foxglovePanelTitle": "Home"
+    },
+    "Teleop!3o7gln8": {
+      "topic": "/stretch/cmd_vel",
+      "publishRate": 1,
+      "upButton": {
+        "field": "linear-x",
+        "value": 1
+      },
+      "downButton": {
+        "field": "linear-x",
+        "value": -1
+      },
+      "leftButton": {
+        "field": "angular-z",
+        "value": 1
+      },
+      "rightButton": {
+        "field": "angular-z",
+        "value": -1
+      }
+    },
+    "Plot!28m2x67": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/odom.pose.pose.position.x",
+          "enabled": true,
+          "color": "#4e98e2",
+          "id": "9aa18087-7f9f-4872-8f90-88a83e689c72"
+        }
+      ]
+    },
+    "DiagnosticSummary!1rjij8p": {
+      "minLevel": 0,
+      "pinnedIds": [],
+      "hardwareIdFilter": "",
+      "topicToRender": "/diagnostics",
+      "sortByLevel": true,
+      "secondsUntilStale": 5
+    },
+    "DiagnosticStatusPanel!3dxgylx": {
+      "topicToRender": "/diagnostics",
+      "selectedHardwareId": "stretch-se3-3076",
+      "selectedName": "stretch_driver: EndOfArm/stretch_gripper"
+    }
+  },
+  "globalVariables": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "userNodes": {},
+  "layout": {
+    "first": {
+      "first": "3D!4jowa39",
+      "second": {
+        "first": {
+          "first": "Indicator!dqhpgj",
+          "second": "Indicator!j74lxr",
+          "direction": "column",
+          "splitPercentage": 48.53801169590642
+        },
+        "second": {
+          "first": "Teleop!3o7gln8",
+          "second": "Plot!28m2x67",
+          "direction": "column"
+        },
+        "direction": "column",
+        "splitPercentage": 23.419442509595818
+      },
+      "direction": "row",
+      "splitPercentage": 64.29548563611492
+    },
+    "second": {
+      "first": "DiagnosticSummary!1rjij8p",
+      "second": "DiagnosticStatusPanel!3dxgylx",
+      "direction": "row"
+    },
+    "direction": "column",
+    "splitPercentage": 72.89097422566022
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "configById": {
+    "3D!4jowa39": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 7.169718448163976,
+        "phi": 72.23631851509627,
+        "thetaOffset": 37.97139997777166,
+        "targetOffset": [
+          1.1998578590831273,
+          1.5562831733139004,
+          -2.3100995145884292e-17
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {
+        "transforms": {
+          "visible": true,
+          "labelSize": 0.02,
+          "axisSize": 0.1,
+          "showLabel": false,
+          "lineWidth": 2
+        },
+        "ignoreColladaUpAxis": false,
+        "meshUpAxis": "z_up"
+      },
+      "transforms": {},
+      "topics": {
+        "/scan": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo",
+          "pointSize": 7
+        },
+        "/map": {
+          "visible": false
+        },
+        "/robot_description": {
+          "visible": true
+        },
+        "/scan_filtered": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "flat",
+          "colorMap": "turbo",
+          "pointSize": 5
+        }
+      },
+      "layers": {
+        "grid": {
+          "visible": true,
+          "drawBehind": false,
+          "label": "Grid",
+          "instanceId": "be567645-7bca-4f49-a081-269f1c76c62e",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {},
+      "fixedFrame": "base_link",
+      "foxglovePanelTitle": "Main",
+      "synchronize": false
+    },
+    "Indicator!2g3sweu": {
+      "path": "/is_runstopped.data",
+      "style": "bulb",
+      "fontSize": 36,
+      "fallbackColor": "#e23535",
+      "fallbackLabel": "False",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#68e24a",
+          "label": "True"
+        }
+      ],
+      "foxglovePanelTitle": "Runstop"
+    },
+    "Indicator!1v8yr8x": {
+      "path": "/is_homed.data",
+      "style": "bulb",
+      "fontSize": 36,
+      "fallbackColor": "#e23535",
+      "fallbackLabel": "False",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#68e24a",
+          "label": "True"
+        }
+      ],
+      "foxglovePanelTitle": "Home"
+    },
+    "Image!4lq821": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {
+        "/camera/depth/color/points": {
+          "visible": false
+        }
+      },
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/camera/color/image_raw",
+        "calibrationTopic": "/camera/color/camera_info",
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "rotation": 90
+      },
+      "foxglovePanelTitle": "Head Camera",
+      "synchronize": false
+    },
+    "Image!hyewz5": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {
+        "/camera/depth/color/points": {
+          "visible": false
+        }
+      },
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/gripper_camera/color/image_rect_raw",
+        "calibrationTopic": "/gripper_camera/color/camera_info",
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "rotation": 0,
+        "rectifyImage": true
+      },
+      "foxglovePanelTitle": "Gripper Camera",
+      "synchronize": false
+    },
+    "DiagnosticSummary!1rjij8p": {
+      "minLevel": 0,
+      "pinnedIds": [],
+      "hardwareIdFilter": "",
+      "topicToRender": "/diagnostics",
+      "sortByLevel": true,
+      "secondsUntilStale": 5
+    },
+    "DiagnosticStatusPanel!3dxgylx": {
+      "topicToRender": "/diagnostics",
+      "selectedHardwareId": "stretch-se3-3076",
+      "selectedName": "stretch_driver: EndOfArm/stretch_gripper"
+    }
+  },
+  "globalVariables": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "userNodes": {},
+  "layout": {
+    "first": {
+      "first": "3D!4jowa39",
+      "second": {
+        "first": {
+          "first": "Indicator!2g3sweu",
+          "second": "Indicator!1v8yr8x",
+          "direction": "column",
+          "splitPercentage": 49.17127071823204
+        },
+        "second": {
+          "first": "Image!4lq821",
+          "second": "Image!hyewz5",
+          "direction": "column"
+        },
+        "direction": "column",
+        "splitPercentage": 24.789000551092645
+      },
+      "direction": "row",
+      "splitPercentage": 64.29548563611492
+    },
+    "second": {
+      "first": "DiagnosticSummary!1rjij8p",
+      "second": "DiagnosticStatusPanel!3dxgylx",
+      "direction": "row"
+    },
+    "direction": "column",
+    "splitPercentage": 72.89097422566022
+  }
+}
