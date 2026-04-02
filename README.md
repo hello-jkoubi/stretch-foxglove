@@ -166,9 +166,9 @@ That's it, you can now visualize your data in Foxglove.
 - Head (D435i) + gripper (D405) camera feeds
 - Both streams updating in real time
 - Side-by-side comparison for quick debugging
-- Live robot diagnostics (ROS 2 `/diagnostics`)
-- Homing status indicator
-- Runstop (safety) status
+- Live robot diagnostics (bottom)
+- Homing status indicator (top right)
+- Runstop (safety) status (top right)
 
 ---
 
@@ -197,6 +197,6 @@ ros2 launch stretch_nav2 offline_mapping.launch.py use_rviz:=false
 - Live map building as the robot moves
 - Robot odometry + laser scan
 - Teleop panel to drive the robot
-- Live robot diagnostics (ROS 2 `/diagnostics`)
-- Homing status indicator
-- Runstop (safety) status
+- Live robot diagnostics (bottom)
+- Homing status indicator (top right)
+- Runstop (safety) status (top right)
