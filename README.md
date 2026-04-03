@@ -127,7 +127,7 @@ You will learn how to load a layout to visualize it in Foxglove.
 2. Go to `Layouts` (left sidebar)
 3. Click `+ Add` 
 4. Select `Import Personal Layout`
-5. Choose the layout file (`.json`) located at `stretch-foxglove/layouts`
+5. Choose the layout file (`.json`) located at [stretch-foxglove/layouts](layouts/)
 6. The layout will be added to the Layouts list, select it and click `Open`
 
 
@@ -155,7 +155,7 @@ ros2 launch stretch_core stretch_driver.launch.py
 ros2 launch stretch_core multi_camera.launch.py 
 ```
 
-4. Load the `stretch_dual_camera.json` layout in Foxglove.
+4. Load the [stretch_dual_camera.json](layouts/stretch_dual_camera.json) layout in Foxglove.
 
 That's it, you can now visualize your data in Foxglove.
 
@@ -188,7 +188,7 @@ ros2 launch foxglove_bridge foxglove_bridge_launch.xml
 ros2 launch stretch_nav2 offline_mapping.launch.py use_rviz:=false
 ```
 
-3. Load the `stretch_mapping.json` layout in Foxglove.
+3. Load the [stretch_mapping.json](layouts/stretch_mapping.json) layout in Foxglove.
 
 #### What you’ll see
 
@@ -234,24 +234,20 @@ Both formats can be opened and replayed in Foxglove.
 
 ### Open in Foxglove
 
-For this example, we use a pre-recorded ROS 2 bag located at: `stretch-foxglove/bags`
+For this example, we use a pre-recorded ROS 2 bag.
 
 1. Open Foxglove  
 2. Click `Open local file(s)`
-3. Select the `stretch_debug.db3` rosbag inside `stretch-foxglove/bags`  
+3. Select the [stretch_debug.db3](bags/stretch_debug/stretch_debug.db3) 
 
 
 ### Visualize the data
 
 Once opened, you can visualize the recorded data by adding panels.
 
-For this example, a layout is already provided:
+For this example, a layout is already provided.
 
-`multipoint_command_debug.json`
-
-[Load this layout](#load-a-layout) to quickly get a full visualization setup.
-
----
+Load the [multipoint_command_debug.json](layouts/multipoint_command_debug.json) layout to quickly get a full visualization setup.
 
 ### Play the recording
 
