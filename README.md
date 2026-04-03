@@ -9,7 +9,7 @@ Use Foxglove with Hello Robot Stretch (ROS 2) for visualization and debugging.
  - [Install](#install)
  - [Test it](#test-it)
  - [Demos](#demos)
- - [Rosbag Playback](#rosbag-playback)
+ - [Rosbag / MCAP Playback](#rosbag--mcap-playback)
 
 
 
@@ -87,7 +87,7 @@ Launch Foxglove:
 foxglove-studio
 ```
 
-> Note:
+> **Note:**
 > You can also open it from the `Foxglove` Desktop App 
 
 
@@ -101,7 +101,7 @@ Once Foxglove opened:
 	```
 - Click `Connect`
 
-> Note:
+> **Note:**
 > You can retrieve the robot IP using:
 > ```bash
 > ifconfig wlo1
@@ -201,16 +201,40 @@ ros2 launch stretch_nav2 offline_mapping.launch.py use_rviz:=false
 
 ---
 
-## Rosbag Playback
+## Rosbag / MCAP Playback
 
-Foxglove can replay recorded ROS 2 data so you can debug and visualize without the robot running.
+Foxglove can replay recorded ROS 2 data for debugging and visualization without needing the robot running.
 
-For this section, we use a pre-recorded ROS 2 bag located at:
+ROS 2 data can be recorded in two formats:
 
-`stretch-foxglove/bags`
+- rosbag (`.db3`) — the default ROS 2 format
+- MCAP (`.mcap`) — a newer, faster, and more portable format that is becoming the standard (and is well supported in Foxglove)
 
+Both formats can be opened and replayed in Foxglove.
+
+### Record Data
+
+- Default ROS 2 rosbag (`.db3`):
+
+	```bash
+	ros2 bag record -o <bag_name> </topic1> </topic2>
+	```
+
+- MCAP (`.mcap`):
+
+	```bash
+	ros2 bag record -s mcap -o <bag_name> </topic1> </topic2>
+	```
+
+> **Note:** MCAP requires a one-time installation:
+> ```bash 
+> sudo apt update
+> sudo apt install ros-humble-rosbag2-storage-mcap
+> ```
 
 ### Open in Foxglove
+
+For this example, we use a pre-recorded ROS 2 bag located at: `stretch-foxglove/bags`
 
 1. Open Foxglove  
 2. Click `Open local file(s)`
@@ -247,14 +271,3 @@ In this example, we use the bag to debug arm joint position.
 <div align="center">
   <img src="docs/multipoint_command_debug_x2.gif" alt="base" width="600"/>
 </div>
-
----
-
-> Format note
-> 
-> ROS 2 uses `.db3` by default.  
-> Foxglove also supports **MCAP**, a faster and more portable format:
-> 
-> ```bash
-> ros2 bag record -s mcap -o <bag_name> </topic1> </topic2>
-> ```
