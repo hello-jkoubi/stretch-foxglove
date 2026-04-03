@@ -238,7 +238,7 @@ For this example, we use a pre-recorded ROS 2 bag.
 
 1. Open Foxglove  
 2. Click `Open local file(s)`
-3. Select the [stretch_debug.db3](bags/stretch_debug/stretch_debug.db3) 
+3. Select the [stretch_debug.db3](bags/stretch_debug/stretch_debug.db3) rosbag
 
 
 ### Visualize the data
