@@ -1,7 +1,7 @@
 # Dual Camera View
 
 <div align="center">
-  <img src="docs/demo1.gif" alt="base" width="600"/>
+  <img src="assets/demo1.gif" alt="base" width="600"/>
 </div>
 
 1. Launch the Foxglove Bridge (Robot):
@@ -25,7 +25,7 @@ ros2 launch stretch_core multi_camera.launch.py
 4. Load the layout in Foxglove
 
 - Follow the instructions to [load a layout](load-layout.md)
-- Use [stretch_dual_camera.json](layouts/stretch_dual_camera.json)
+- Use [stretch_dual_camera.json](/layouts/stretch_dual_camera.json)
 
 
 That's it, you can now visualize your data in Foxglove.
@@ -34,7 +34,7 @@ That's it, you can now visualize your data in Foxglove.
 ## What you’ll see
 
 <div align="center">
-  <img src="docs/demo1-multi-camera.png" alt="base" width="600"/>
+  <img src="assets/demo1-multi-camera.png" alt="base" width="600"/>
 </div>
 
 - Head (D435i) + gripper (D405) camera feeds

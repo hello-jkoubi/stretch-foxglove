@@ -11,8 +11,6 @@ Use Foxglove with Hello Robot Stretch (ROS 2) for visualization and debugging.
  - [Demos](#demos)
  - [Rosbag / MCAP Playback](#rosbag--mcap-playback)
 
-
-
 ---
 
 ## Requirements
@@ -128,7 +126,7 @@ Click on any demo to explore setup instructions and details.
 ### [Demo 1 — Dual Camera View](demo1.md)
 
 <div align="center">
-  <img src="docs/demo1.gif" alt="base" width="600"/>
+  <img src="docs/assets/demo1.gif" alt="base" width="600"/>
 </div>
 
 
@@ -136,13 +134,13 @@ Click on any demo to explore setup instructions and details.
 ### [Demo 2 — Mapping + Teleop](demo2.md)
 
 <div align="center">
-  <img src="docs/demo2.gif" alt="base" width="600"/>
+  <img src="docs/assets/demo2.gif" alt="base" width="600"/>
 </div>
 
 ### [Demo 3 — Stretch ROS 2 System Debugging](demo3.md)
 
 <div align="center">
-  <img src="docs/demo3.gif" alt="base" width="600"/>
+  <img src="docs/assets/demo3.gif" alt="base" width="600"/>
 </div>
 
 ---
@@ -200,7 +198,7 @@ Load the [multipoint_command_debug.json](layouts/multipoint_command_debug.json) 
 Use the playback controls at the bottom of Foxglove to **play the rosbag** and explore the data over time.
 
 <div align="center">
-  <img src="docs/rosbag_play.png" alt="base" width="600"/>
+  <img src="docs/assets/rosbag_play.png" alt="base" width="600"/>
 </div>
 
 In this example, we use the bag to debug arm joint position.
@@ -211,5 +209,5 @@ In this example, we use the bag to debug arm joint position.
 - At the top right, the full joint states data from the `/joint_states` topic is also displayed.
 
 <div align="center">
-  <img src="docs/rosbag-multipoint_command_debug_x2.gif" alt="base" width="600"/>
+  <img src="docs/assets/rosbag-multipoint_command_debug_x2.gif" alt="base" width="600"/>
 </div>

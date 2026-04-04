@@ -1,7 +1,7 @@
 # Mapping + Teleop
 
 <div align="center">
-  <img src="docs/demo2.gif" alt="base" width="600"/>
+  <img src="assets/demo2.gif" alt="base" width="600"/>
 </div>
 
 1. Launch the Foxglove Bridge (Robot):
@@ -25,12 +25,12 @@ ros2 service call /switch_to_navigation_mode std_srvs/srv/Trigger {}\
 4. Load the layout in Foxglove
 
 - Follow the instructions to [load a layout](load-layout.md)
-- Use [stretch_mapping.json](layouts/stretch_mapping.json)
+- Use [stretch_mapping.json](/layouts/stretch_mapping.json)
 
 ## What you’ll see
 
 <div align="center">
-  <img src="docs/demo2-mapping.png" alt="base" width="600"/>
+  <img src="assets/demo2-mapping.png" alt="base" width="600"/>
 </div>
 
 - Live map building as the robot moves + laser scan
