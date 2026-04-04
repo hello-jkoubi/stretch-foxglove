@@ -18,7 +18,7 @@ ros2 launch stretch_core stretch_driver.launch.py
 
 3. Load the layout in Foxglove
 
-- Follow the instructions to [load a layout](load-layout)
+- Follow the instructions to [load a layout](load-layout.md)
 - Use [system_debugging.json](/layouts/system_debugging.json)
 
 ## What you’ll see
