@@ -54,5 +54,5 @@ The main tab is split into four key areas:
 - Full-screen TF tree for understanding frame relationships
 
 
-> **Note:** MCAP requires a one-time installation:
-> Tabs are used here to give the Topic Graph and TF Tree dedicated space, making them easier to read and interact with during debugging.
+> **Note:**
+> This layout uses tabs to optimize visibility for complex debugging tools. Views like the `Topics Graph` and `TF Tree` benefit from full-screen space, making them easier to read, navigate, and analyze during debugging sessions.

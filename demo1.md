@@ -24,7 +24,7 @@ ros2 launch stretch_core multi_camera.launch.py
 
 4. Load the layout in Foxglove
 
-- Follow the instructions to [load a layout](load-layout)
+- Follow the instructions to [load a layout](load-layout.md)
 - Use [stretch_dual_camera.json](layouts/stretch_dual_camera.json)
 
 

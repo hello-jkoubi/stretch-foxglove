@@ -16,7 +16,7 @@ ros2 launch foxglove_bridge foxglove_bridge_launch.xml
 ros2 launch stretch_nav2 offline_mapping.launch.py use_rviz:=false
 ```
 
-3. Switch to Navigaton mode in order to control with Foxglove teleop
+3. Switch to Navigation mode in order to control with Foxglove teleop
 
 ```bash
 ros2 service call /switch_to_navigation_mode std_srvs/srv/Trigger {}\
@@ -24,7 +24,7 @@ ros2 service call /switch_to_navigation_mode std_srvs/srv/Trigger {}\
 
 4. Load the layout in Foxglove
 
-- Follow the instructions to [load a layout](load-layout)
+- Follow the instructions to [load a layout](load-layout.md)
 - Use [stretch_mapping.json](layouts/stretch_mapping.json)
 
 ## What you’ll see
@@ -33,8 +33,8 @@ ros2 service call /switch_to_navigation_mode std_srvs/srv/Trigger {}\
   <img src="docs/demo2-mapping.png" alt="base" width="600"/>
 </div>
 
-- Live map building as the robot moves
-- Robot odometry + laser scan
+- Live map building as the robot moves + laser scan
+- Robot odometry (right-hand side)
 - Teleop panel to drive the robot (right-hand side)
 - Live robot diagnostics (bottom)
 - Homing status indicator (top right)
