@@ -125,7 +125,7 @@ Each demo is designed to be:
 Click on any demo to explore setup instructions and details.
 
 
-### Demo 1 — Dual Camera View
+### [Demo 1 — Dual Camera View](demo1.md)
 
 <div align="center">
   <img src="docs/demo1.gif" alt="base" width="600"/>
@@ -133,13 +133,13 @@ Click on any demo to explore setup instructions and details.
 
 
 
-### Demo 2 — Mapping + Teleop
+### [Demo 2 — Mapping + Teleop](demo2.md)
 
 <div align="center">
   <img src="docs/demo2.gif" alt="base" width="600"/>
 </div>
 
-### Demo 3 — Stretch ROS 2 System Debugging
+### [Demo 3 — Stretch ROS 2 System Debugging](demo3.md)
 
 <div align="center">
   <img src="docs/demo3.gif" alt="base" width="600"/>
