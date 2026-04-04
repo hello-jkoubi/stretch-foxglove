@@ -1,0 +1,124 @@
+{
+  "configById": {
+    "3D!4gpvh3y": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 5.839780486774154,
+        "phi": 63.28688163579318,
+        "thetaOffset": -4.997227817700375,
+        "targetOffset": [
+          0.9333731347154699,
+          1.0861633966501714,
+          -1.1198154154716727e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "fixedFrame": "base_link",
+      "scene": {},
+      "transforms": {},
+      "topics": {
+        "/robot_description": {
+          "visible": false
+        }
+      },
+      "layers": {
+        "grid": {
+          "visible": true,
+          "drawBehind": false,
+          "label": "Grid",
+          "instanceId": "97c15b37-961e-4ec8-82cc-d69aa516fe77",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "synchronize": false,
+      "imageMode": {}
+    },
+    "RawMessages!2tjfp3t": {
+      "defaultExpanded": false,
+      "topicPath": "/stretch/joint_states"
+    },
+    "Parameters!3e4yen1": {},
+    "RosOut!1r78fkz": {
+      "minLogLevel": 1,
+      "preload": true,
+      "searchTerms": [],
+      "nameFilter": {},
+      "fontSize": 12
+    },
+    "TopicGraph!1j7kbub": {},
+    "TransformTree!2fb6tr5": {},
+    "Tab!47z9ueb": {
+      "activeTabIdx": 0,
+      "tabs": [
+        {
+          "title": "Main",
+          "layout": {
+            "first": {
+              "first": "3D!4gpvh3y",
+              "second": "RawMessages!2tjfp3t",
+              "direction": "row"
+            },
+            "second": {
+              "first": "Parameters!3e4yen1",
+              "second": "RosOut!1r78fkz",
+              "direction": "row",
+              "splitPercentage": 49.968650636086444
+            },
+            "direction": "column"
+          }
+        },
+        {
+          "title": "Topics Graph",
+          "layout": "TopicGraph!1j7kbub"
+        },
+        {
+          "title": "TF Tree",
+          "layout": "TransformTree!2fb6tr5"
+        }
+      ]
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": "Tab!47z9ueb"
+}
