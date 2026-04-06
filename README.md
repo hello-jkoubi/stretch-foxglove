@@ -125,11 +125,15 @@ Click on any demo to explore setup instructions and details.
 
 ### [Demo 1 — Dual Camera View](/docs/demo1.md)
 
-<div align="center">
+<!-- <div align="center">
   <img src="docs/assets/demo1.gif" alt="base" width="600"/>
+</div> -->
+
+<div align="center">
+  <a href="/docs/demo1.md">
+    <img src="docs/assets/demo1.gif" alt="Demo 1 — Dual Camera View" width="600"/>
+  </a>
 </div>
-
-
 
 ### [Demo 2 — Mapping + Teleop](/docs/demo2.md)
 
