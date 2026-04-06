@@ -125,10 +125,6 @@ Click on any demo to explore setup instructions and details.
 
 ### [Demo 1 — Dual Camera View](/docs/demo1.md)
 
-<!-- <div align="center">
-  <img src="docs/assets/demo1.gif" alt="base" width="600"/>
-</div> -->
-
 <div align="center">
   <a href="/docs/demo1.md">
     <img src="docs/assets/demo1.gif" alt="Demo 1 — Dual Camera View" width="600"/>
@@ -138,13 +134,17 @@ Click on any demo to explore setup instructions and details.
 ### [Demo 2 — Mapping + Teleop](/docs/demo2.md)
 
 <div align="center">
-  <img src="docs/assets/demo2.gif" alt="base" width="600"/>
+  <a href="/docs/demo2.md">
+    <img src="docs/assets/demo2.gif" alt="Demo 2 — Mapping + Teleop" width="600"/>
+  </a>
 </div>
 
 ### [Demo 3 — Stretch ROS 2 System Debugging](/docs/demo3.md)
 
 <div align="center">
-  <img src="docs/assets/demo3.gif" alt="base" width="600"/>
+  <a href="/docs/demo3.md">
+    <img src="docs/assets/demo3.gif" alt="Demo 3 — Stretch ROS 2 System Debugging" width="600"/>
+  </a>
 </div>
 
 ---
